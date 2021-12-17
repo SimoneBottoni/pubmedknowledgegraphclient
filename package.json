@@ -1,0 +1,56 @@
+{
+  "name": "pubmedknowledgegraphclient",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@carbon/icons-react": "^10.39.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "babel-preset-es2021": "^1.0.0",
+    "carbon-components": "10.40.0",
+    "carbon-components-react": "7.40.0",
+    "carbon-icons": "^7.0.7",
+    "cose-base": "^2.1.0",
+    "cytoscape": "^3.19.0",
+    "cytoscape-cose-bilkent": "^4.1.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-babel": "^5.3.1",
+    "leaflet": "^1.7.1",
+    "leaflet.markercluster": "^1.5.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-cytoscapejs": "^1.2.1",
+    "react-dom": "^17.0.2",
+    "react-force-graph": "^1.41.7",
+    "react-highlight-words": "^0.17.0",
+    "react-leaflet": "^3.2.1",
+    "react-leaflet-markercluster": "^3.0.0-rc1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "three": "^0.133.1",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:8080",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "resolutions": {
+    "bezier-js": "4.0.3"
+  }
+}
