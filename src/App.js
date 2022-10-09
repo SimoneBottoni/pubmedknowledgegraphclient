@@ -19,7 +19,7 @@ function App() {
           <div className="container">
             <Header aria-label="IBM Knowledge Graph">
               <HeaderName prefix="">
-                PubMed Knowledge Graph
+                PubMed Knowledge Tool
               </HeaderName>
               <HeaderNavigation aria-label="IBM Knowledge Graph">
                 {/*<HeaderMenuItem element={Link} to="/graph">Knowledge Test</HeaderMenuItem>*/}
