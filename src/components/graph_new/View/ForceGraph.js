@@ -2,18 +2,23 @@ import React from "react";
 import GraphContext from "../../../context/GraphContext";
 import {ForceGraph3D} from "react-force-graph";
 import {Mesh, MeshLambertMaterial, SphereGeometry} from "three";
+import GraphTable from "../GraphTable";
+import {ComposedModal, Link, ModalBody, ModalHeader} from "carbon-components-react";
+import {DashboardReference16} from "@carbon/icons-react";
 
 
 const ForceGraph = () => {
 
-    const {data, dataLoaded, selectedObj, setSelectedObj, selectedType, setSelectedType} = React.useContext(GraphContext)
+    const {data, dataLoaded, selectedObj, setSelectedObj, selectedType, setSelectedType, setModalOpen} = React.useContext(GraphContext)
 
     const nodeClickHandler = (node, event) => {
         setSelectedObj(node)
+        setModalOpen(true)
     }
 
     const linkClickHandler = (link, event) => {
         setSelectedObj(link);
+        setModalOpen(true)
     }
 
     return React.useMemo(() => {
@@ -71,8 +76,8 @@ const ForceGraph = () => {
                             onNodeClick={nodeClickHandler}
                             onLinkClick={linkClickHandler}
                             showNavInfo={true}
-                            height={500}
-                            width={650}
+                            height={970}
+                            width={1370}
                             nodeOpacity={1}
                             linkWidth={1.3}
                             enableNavigationControls={true}

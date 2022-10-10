@@ -24,6 +24,8 @@ export const GraphProvider = ({ children }) => {
     const [selectedObj, setSelectedObj] = useState(null)
     const [selectedType, setSelectedType] = useState(null)
 
+    const [modalOpen, setModalOpen] = React.useState(false)
+
     const fetchData = async (dir, id) => {
         console.log('Sending request.')
         return await fetch(`http://localhost:8180/api/v1/article/${dir}/${id}`,{ method: 'GET', headers: {Accept: 'application/json'}})
@@ -49,7 +51,7 @@ export const GraphProvider = ({ children }) => {
     }
 
     const value = {
-        data, dataLoaded, getData, selectedObj, setSelectedObj, error, setError, errorMessage, selectedType, setSelectedType
+        data, dataLoaded, getData, selectedObj, setSelectedObj, error, setError, errorMessage, selectedType, setSelectedType, modalOpen, setModalOpen
     }
 
     return(
