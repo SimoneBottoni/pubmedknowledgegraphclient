@@ -27,7 +27,7 @@
     "react-leaflet": "^3.2.1",
     "react-leaflet-markercluster": "^3.0.0-rc1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.0",
     "three": "^0.133.1",
     "web-vitals": "^1.1.2"
   },
