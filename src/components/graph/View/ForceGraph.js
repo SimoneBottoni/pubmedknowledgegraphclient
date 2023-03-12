@@ -2,9 +2,6 @@ import React from "react";
 import GraphContext from "../../../context/GraphContext";
 import {ForceGraph3D} from "react-force-graph";
 import {Mesh, MeshLambertMaterial, SphereGeometry} from "three";
-import GraphTable from "../GraphTable";
-import {ComposedModal, Link, ModalBody, ModalHeader} from "carbon-components-react";
-import {DashboardReference16} from "@carbon/icons-react";
 
 
 const ForceGraph = () => {

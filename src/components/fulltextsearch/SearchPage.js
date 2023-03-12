@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {
     Button,
     Tile,
@@ -57,7 +57,7 @@ const SearchPage = () => {
     const [selectedType, setSelectedType] = React.useState(null)
 
     async function runRequest(body) {
-        return await fetch("http://localhost:8180/api/v1/article/search", {
+        return await fetch("/api/v1/article/search", {
             method: "POST",
             headers: {"content-type": "application/json"},
             body: JSON.stringify(body)
@@ -65,14 +65,14 @@ const SearchPage = () => {
     }
 
     async function runRequestGetPmid(id) {
-        return await fetch(`http://localhost:8180/api/v1/article/search/pmid/${id}`,{
+        return await fetch(`/api/v1/article/search/pmid/${id}`,{
             method: 'GET',
             headers: {Accept: 'application/json'}
         })
     }
 
     async function runRequestGetCUI(cui) {
-        return await fetch(`http://localhost:8180/api/v1/article/tag/${cui}`,{
+        return await fetch(`/api/v1/article/tag/${cui}`,{
             method: 'GET',
             headers: {Accept: 'application/json'}
         })

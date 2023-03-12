@@ -45,7 +45,8 @@ const GraphSearch = () => {
                             >
                                 <SelectItem text="Choose an option..." value="" />
                                 <SelectItem text="Pmid" value="pmid" />
-                                <SelectItem text="CUI" value="tag" />
+                                <SelectItem text="Tag CUI" value="tag" />
+                                <SelectItem text="Tag Preferred Name" value="name" />
                             </Select>
                         </div>
                     </div>
